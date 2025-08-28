@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LWEAXO | Portfolyo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://emojicdn.elk.sh/👑?style=google" type="image/png">
+    <link rel="stylesheet" href="lweaxo.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fab fa-github"></i>
+                <span>LWEAXO</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-tab="projects">
+                    <i class="fas fa-code"></i>
+                    <span>Projeler</span>
+                </a>
+                <a href="#" class="nav-link" data-tab="about">
+                    <i class="fas fa-user"></i>
+                    <span>Hakkımda</span>
+                </a>
+                <a href="#" class="nav-link" data-tab="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>İletişim</span>
+                </a> 
+                <a href="#" class="nav-link" data-tab="activity">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Aktiviteler</span>
+                </a>
+            </div>
+            <div class="user-section">
+                <div class="user-avatar">
+                    <img id="profile-avatar" src="" alt="Profil Resmi">
+                </div>
+                <div class="user-info">
+                    <span class="username" id="profile-username">Kullanıcı Adı</span>
+                    <span class="user-status">GitHub</span>
+                </div>
+                <div class="user-controls">
+                    <button class="user-control theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <span class="tooltip">Tema Değiştir</span>
+                    </button>
+                    <a href="#" id="github-profile-link" target="_blank" class="user-control">
+                        <i class="fab fa-github"></i>
+                        <span class="tooltip">GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h1 id="main-title">Profilim</h1>
+            </header>
+
+            <section id="projects" class="tab-content active-tab">
+                <div class="section-header">
+                    <h2>GitHub Projelerim</h2>
+                    <div class="view-options">
+                        <button class="view-option active" data-view="grid"><i class="fas fa-th-large"></i></button>
+                        <button class="view-option" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+                <div class="projects-grid" id="projects-container">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Projeler yükleniyor...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="tab-content">
+                <div class="about-section">
+                    <div class="about-header">
+                        <div class="about-avatar">
+                            <img id="about-avatar" src="" alt="Profil Fotoğrafı">
+                        </div>
+                        <div class="about-title">
+                            <h2 id="about-name">Merhaba, Ben </h2>
+                            <p id="about-bio">Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <p id="about-description">Profil bilgileri yükleniyor...</p>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Yeteneklerim</h3>
+                        <div class="skills-grid" id="skills-container">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="tab-content">
+                <div class="contact-section">
+                    <h2>Benimle İletişime Geçin</h2>
+                    <div class="social-buttons-container">
+                        <button class="social-btn discord-btn" data-link="https://discord.com/users/1015356240492245054">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </button>
+                        
+                        <button class="social-btn discord-btn" data-link="https://discord.gg/codeium">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord Sunucum</span>
+                        </button>
+                        
+                        <button class="social-btn instagram-btn" data-link="https://www.instagram.com/lweaxo/">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </button>
+                        
+                        <button class="social-btn github-btn" data-link="https://github.com/LWEAXO">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="activity" class="tab-content">
+                <div class="activity-section">
+                    <h2>Aktivitelerim</h2>
+                    <div class="activity-container" id="activity-feed">
+                        <div class="loading-activities">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Aktiviteler yükleniyor...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="lweaxo.js"></script>
+    <script src="back.js"></script>
+</body>
+</html>
